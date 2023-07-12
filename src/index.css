@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid purple;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.todo-list-heading {
+  color: purple;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.todo-list-item {
+  color: red;
+}
+
+.todo-list-item input[type="text"],
+.todo-list-item button {
+  display: none;
+}
+
+.todo-list-item.editing input[type="text"],
+.todo-list-item.editing button {
+  display: inline-block;
+}
+
+.add-input {
+  text-align: center;
+}
+
+.todo-list-container h1 {
+  text-align: center;
+  color: purple;
+  font-family: cursive;
+}
+
+.todo-list-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list-container input[type="text"],
+.todo-list-container button {
+  margin-top: 8px;
+  border-color: whitesmoke;
+  font-family: cursive;
+}
+
+.todo-list-container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-family: cursive;
+}
+
+.todo-list-container li input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.todo-list-container li span {
+  flex-grow: 1;
+}
+
+.todo-list-container li button {
+  margin-left: 8px;
+  background-color: purple;
+  color: white;
+}
+
+.todo-list-container button.add-button {
+  background-color: white;
+  color: purple;
+  border-color: whitesmoke;
+}
